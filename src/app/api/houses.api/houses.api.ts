@@ -1,60 +1,61 @@
+import { IHouse } from "../../interfaces/house";
 // import house images
-import House1 from "./assets/img/houses/house1.png";
-import House2 from "./assets/img/houses/house2.png";
-import House3 from "./assets/img/houses/house3.png";
-import House4 from "./assets/img/houses/house4.png";
-import House5 from "./assets/img/houses/house5.png";
-import House6 from "./assets/img/houses/house6.png";
-import House7 from "./assets/img/houses/house7.png";
-import House8 from "./assets/img/houses/house8.png";
-import House9 from "./assets/img/houses/house9.png";
-import House10 from "./assets/img/houses/house10.png";
-import House11 from "./assets/img/houses/house11.png";
-import House12 from "./assets/img/houses/house12.png";
+import House1 from "../../../assets/houses/house1.png";
+import House2 from "../../../assets/houses/house2.png";
+import House3 from "../../../assets/houses/house3.png";
+import House4 from "../../../assets/houses/house4.png";
+import House5 from "../../../assets/houses/house5.png";
+import House6 from "../../../assets/houses/house6.png";
+import House7 from "../../../assets/houses/house7.png";
+import House8 from "../../../assets/houses/house8.png";
+import House9 from "../../../assets/houses/house9.png";
+import House10 from "../../../assets/houses/house10.png";
+import House11 from "../../../assets/houses/house11.png";
+import House12 from "../../../assets/houses/house12.png";
 // import house large images
-import House1Lg from "./assets/img/houses/house1lg.png";
-import House2Lg from "./assets/img/houses/house2lg.png";
-import House3Lg from "./assets/img/houses/house3lg.png";
-import House4Lg from "./assets/img/houses/house4lg.png";
-import House5Lg from "./assets/img/houses/house5lg.png";
-import House6Lg from "./assets/img/houses/house6lg.png";
-import House7Lg from "./assets/img/houses/house7lg.png";
-import House8Lg from "./assets/img/houses/house8lg.png";
-import House9Lg from "./assets/img/houses/house9lg.png";
-import House10Lg from "./assets/img/houses/house10lg.png";
-import House11Lg from "./assets/img/houses/house11lg.png";
-import House12Lg from "./assets/img/houses/house12lg.png";
+import House1Lg from "../../../assets/houses/house1lg.png";
+import House2Lg from "../../../assets/houses/house2lg.png";
+import House3Lg from "../../../assets/houses/house3lg.png";
+import House4Lg from "../../../assets/houses/house4lg.png";
+import House5Lg from "../../../assets/houses/house5lg.png";
+import House6Lg from "../../../assets/houses/house6lg.png";
+import House7Lg from "../../../assets/houses/house7lg.png";
+import House8Lg from "../../../assets/houses/house8lg.png";
+import House9Lg from "../../../assets/houses/house9lg.png";
+import House10Lg from "../../../assets/houses/house10lg.png";
+import House11Lg from "../../../assets/houses/house11lg.png";
+import House12Lg from "../../../assets/houses/house12lg.png";
 
 // import apartments images
-import Apartment1 from "./assets/img/apartments/a1.png";
-import Apartment2 from "./assets/img/apartments/a2.png";
-import Apartment3 from "./assets/img/apartments/a3.png";
-import Apartment4 from "./assets/img/apartments/a4.png";
-import Apartment5 from "./assets/img/apartments/a5.png";
-import Apartment6 from "./assets/img/apartments/a6.png";
+import Apartment1 from "../../../assets/apartments/a1.png";
+import Apartment2 from "../../../assets/apartments/a2.png";
+import Apartment3 from "../../../assets/apartments/a3.png";
+import Apartment4 from "../../../assets/apartments/a4.png";
+import Apartment5 from "../../../assets/apartments/a5.png";
+import Apartment6 from "../../../assets/apartments/a6.png";
 // import apartments large images
-import Apartment1Lg from "./assets/img/apartments/a1lg.png";
-import Apartment2Lg from "./assets/img/apartments/a2lg.png";
-import Apartment3Lg from "./assets/img/apartments/a3lg.png";
-import Apartment4Lg from "./assets/img/apartments/a4lg.png";
-import Apartment5Lg from "./assets/img/apartments/a5lg.png";
-import Apartment6Lg from "./assets/img/apartments/a6lg.png";
+import Apartment1Lg from "../../../assets/apartments/a1lg.png";
+import Apartment2Lg from "../../../assets/apartments/a2lg.png";
+import Apartment3Lg from "../../../assets/apartments/a3lg.png";
+import Apartment4Lg from "../../../assets/apartments/a4lg.png";
+import Apartment5Lg from "../../../assets/apartments/a5lg.png";
+import Apartment6Lg from "../../../assets/apartments/a6lg.png";
 
 // import agents images
-import Agent1 from "./assets/img/agents/agent1.png";
-import Agent2 from "./assets/img/agents/agent2.png";
-import Agent3 from "./assets/img/agents/agent3.png";
-import Agent4 from "./assets/img/agents/agent4.png";
-import Agent5 from "./assets/img/agents/agent5.png";
-import Agent6 from "./assets/img/agents/agent6.png";
-import Agent7 from "./assets/img/agents/agent7.png";
-import Agent8 from "./assets/img/agents/agent8.png";
-import Agent9 from "./assets/img/agents/agent9.png";
-import Agent10 from "./assets/img/agents/agent10.png";
-import Agent11 from "./assets/img/agents/agent11.png";
-import Agent12 from "./assets/img/agents/agent12.png";
+import Agent1 from "../../../assets/agents/agent1.png";
+import Agent2 from "../../../assets/agents/agent2.png";
+import Agent3 from "../../../assets/agents/agent3.png";
+import Agent4 from "../../../assets/agents/agent4.png";
+import Agent5 from "../../../assets/agents/agent5.png";
+import Agent6 from "../../../assets/agents/agent6.png";
+import Agent7 from "../../../assets/agents/agent7.png";
+import Agent8 from "../../../assets/agents/agent8.png";
+import Agent9 from "../../../assets/agents/agent9.png";
+import Agent10 from "../../../assets/agents/agent10.png";
+import Agent11 from "../../../assets/agents/agent11.png";
+import Agent12 from "../../../assets/agents/agent12.png";
 
-export const houses = [
+export const houses: IHouse[] = [
   {
     id: 1,
     type: "House",
@@ -70,6 +71,7 @@ export const houses = [
     surface: "4200 sq ft",
     year: "2016",
     price: "110000",
+    displayedPrice: "110,000",
     agent: {
       image: Agent1,
       name: "Patricia Tullert",
@@ -91,6 +93,7 @@ export const houses = [
     surface: "4200 sq ft",
     year: "2016",
     price: "140000",
+    displayedPrice: "140,000",
     agent: {
       image: Agent2,
       name: "Daryl Hawker",
@@ -112,6 +115,7 @@ export const houses = [
     surface: "4200 sq ft",
     year: "2016",
     price: "170000",
+    displayedPrice: "170,000",
     agent: {
       image: Agent3,
       name: "Amado Smith",
@@ -133,6 +137,7 @@ export const houses = [
     surface: "4200 sq ft",
     year: "2016",
     price: "200000",
+    displayedPrice: "200,000",
     agent: {
       image: Agent4,
       name: "Kaitlyn Gonzalez",
@@ -154,6 +159,7 @@ export const houses = [
     surface: "4200 sq ft",
     year: "2015",
     price: "210000",
+    displayedPrice: "210,000",
     agent: {
       image: Agent5,
       name: "Grover Robinson",
@@ -175,6 +181,7 @@ export const houses = [
     surface: "6200 sq ft",
     year: "2014",
     price: "220000",
+    displayedPrice: "220,000",
     agent: {
       image: Agent6,
       name: "Karen Sorensen",
@@ -196,6 +203,7 @@ export const houses = [
     surface: "1200 sq ft",
     year: "2012",
     price: "20000",
+    displayedPrice: "20,000",
     agent: {
       image: Agent7,
       name: "Jawhar Shamil Naser",
@@ -217,6 +225,7 @@ export const houses = [
     surface: "1000 sq ft",
     year: "2011",
     price: "30000",
+    displayedPrice: "30,000",
     agent: {
       image: Agent8,
       name: "Juana Douglass",
@@ -238,6 +247,7 @@ export const houses = [
     surface: "1100 sq ft",
     year: "2011",
     price: "40000",
+    displayedPrice: "40,000",
     agent: {
       image: Agent9,
       name: "Jerry Schenck",
@@ -259,6 +269,7 @@ export const houses = [
     surface: "3200 sq ft",
     year: "2015",
     price: "117000",
+    displayedPrice: "117,000",
     agent: {
       image: Agent10,
       name: "Vera Levesque",
@@ -280,6 +291,7 @@ export const houses = [
     surface: "2200 sq ft",
     year: "2019",
     price: "145000",
+    displayedPrice: "145,000",
     agent: {
       image: Agent11,
       name: "Sofia Gomes",
@@ -301,6 +313,7 @@ export const houses = [
     surface: "4600 sq ft",
     year: "2015",
     price: "139000",
+    displayedPrice: "139,000",
     agent: {
       image: Agent12,
       name: "Raymond Hood",
@@ -322,6 +335,7 @@ export const houses = [
     surface: "5200 sq ft",
     year: "2014",
     price: "180000",
+    displayedPrice: "180,000",
     agent: {
       image: Agent1,
       name: "Patricia Tullert",
@@ -343,6 +357,7 @@ export const houses = [
     surface: "3200 sq ft",
     year: "2011",
     price: "213000",
+    displayedPrice: "213,000",
     agent: {
       image: Agent2,
       name: "Daryl Hawker",
@@ -364,6 +379,7 @@ export const houses = [
     surface: "5200 sq ft",
     year: "2013",
     price: "221000",
+    displayedPrice: "221,000",
     agent: {
       image: Agent3,
       name: "Amado Smith",
@@ -385,6 +401,7 @@ export const houses = [
     surface: "1300 sq ft",
     year: "2011",
     price: "21000",
+    displayedPrice: "21,000",
     agent: {
       image: Agent4,
       name: "Kaitlyn Gonzalez",
@@ -406,6 +423,7 @@ export const houses = [
     surface: "1000 sq ft",
     year: "2012",
     price: "32000",
+    displayedPrice: "32,000",
     agent: {
       image: Agent5,
       name: "Grover Robinson",
@@ -427,6 +445,7 @@ export const houses = [
     surface: "1200 sq ft",
     year: "2010",
     price: "38000",
+    displayedPrice: "38,000",
     agent: {
       image: Agent6,
       name: "Karen Sorensen",
