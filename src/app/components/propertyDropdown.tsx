@@ -17,7 +17,7 @@ const PropertyDropdown = () => {
         <AiOutlineHome className="dropdown-icon-primary leading-tight" />
         <div>
           <div className="text-[15px] font-medium">{property}</div>
-          <div className="text-[13px]">Select your place</div>
+          <div className="text-[13px]">Select building type </div>
         </div>
         {isOpen ? (
           <RiArrowUpSLine className="dropdown-icon-secondary" />
